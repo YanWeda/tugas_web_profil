@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Skill Teknis</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* --- Style Navbar --- */
+        nav {
+            background-image: linear-gradient(to right, #ADD8E6, #87CEFA);
+            display: flex;
+            justify-content: flex-start;
+            padding: 15px 50px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #e6f7ff; 
+            color: #0056b3; 
+        }
+
+        /* --- STYLE MENU AKTIF --- */
+        nav a.active {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* --- Style Container Tengah --- */
+        .container {
+            max-width: 600px;
+            margin: 50px auto; 
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            flex: 1; /* Mendorong footer ke bawah */
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #555;
+            border-bottom: 2px solid #87CEFA; 
+            padding-bottom: 10px;
+        }
+
+        /* --- MODIFIKASI BULLET UL --- */
+        ul {
+            list-style: none;
+            padding-left: 10px;
+        }
+
+        li {
+            position: relative;
+            margin-bottom: 15px;
+            padding-left: 30px; 
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee; 
+            color: #444;
+            line-height: 1.6;
+        }
+
+        li::before {
+            content: '✔'; 
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #87CEFA; 
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        li:last-child {
+            border-bottom: none; 
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        strong {
+            color: #333;
+            display: block; 
+            font-size: 16px;
+        }
+
+        /* --- STYLE FOOTER --- */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto; 
+        }
+
+        footer p { color: white; margin: 0; font-size: 14px; }
+
+        /* Responsive untuk HP */
+        @media (max-width: 900px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 20px;
+                background-image: linear-gradient(to bottom, #ADD8E6, #87CEFA);
+            }
+            
+            nav a { margin: 5px 0; width: 100%; box-sizing: border-box; }
+            nav a.active { width: auto; align-self: center; }
+
+            .container {
+                margin: 20px auto;
+                padding: 20px;
+                width: 90%;
+                box-sizing: border-box;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="test.html">HOME</a> 
+        <a href="pendidikan.html">PENDIDIKAN</a>
+        <a href="#" class="active">SKILL</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="container">
+        <h2>Daftar Skill Utama</h2>
+        
+        <ul>
+            <li>
+                <strong>Fotografi & Videografi</strong>
+                Memiliki keahlian dalam mengambil gambar dan merekam video dengan angle yang menarik, mengatur tata cahaya, serta melakukan editing visual untuk hasil yang maksimal.
+            </li>
+            
+            <li>
+                <strong>Web Desain (UI/UX)</strong>
+                Mampu merancang antarmuka website yang tidak hanya indah dipandang secara visual (menggunakan HTML, CSS, atau alat seperti Figma), tetapi juga memiliki pengalaman pengguna (User Experience) yang nyaman dan fungsional.
+            </li>
+
+            <li>
+                <strong>Pro Player Mobile Legends</strong>
+                Memiliki pemahaman makro dan mikro yang mendalam tentang permainan, penguasaan hero pool yang luas, serta kemampuan komunikasi dan kerja sama tim yang solid di tingkat kompetitif.
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 I Wayan Weda Adi Putra.</p>
+    </footer>
+
+</body>
+</html>
